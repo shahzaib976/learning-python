@@ -17,12 +17,12 @@ print("square of b",squareB)
 power=a**b
 print("power",power)
 
-num = 22
+num = 25
 
-# if num%2==0:
-#     print("Even")
-# else:
-#     print("Odd")
+if num%2==0:
+    print("Even")
+else:
+    print("Odd")
 
 
 if num%3==0 and num%5==0:
@@ -36,7 +36,7 @@ else:
 
 
 
-
+ 
 
 
 

@@ -152,8 +152,8 @@ def findMe(*arg):
        return None
 
 
-# result = findMe("Ali","Saqib","Shahzaib")
-# print('findMe: ', result)
+result = findMe("Ali","Saqib","Shahzaib","Noor")
+print('findMe: ', result)
 
 
 
@@ -185,5 +185,49 @@ def factorial(a):
     product = product*x
    return product
  
+
+
+def find_number(*numbers):
+   num = 10
+   if num in numbers:
+      return num
+   else: 
+      return None
+   
+
+target = find_number(2,5,6,7,5,4,2,4,10)
+print('target = ', target)
+
+new_list = []
+list = [12,34,45,56,45,32,12,77,89,77]
+for num in list:
+   if num not in new_list:
+      new_list.append(num)
+      new_list.sort()
+print(new_list)
+
+
+def remove_dublicates(list):
+   new_list = []
+   for item in list:
+      if item not in new_list:
+         new_list.append(item)
+   new_list.sort()
+   return new_list
+
+my_list = [78,12,90,56,34,34,23,19,34,19,78]
+result = remove_dublicates(my_list)
+print('result: ', result)
+
+      
+names = ["Saqib","Shahzaib","Saqib","Shahzaib",]
+names_list = remove_dublicates(names)
+print('names_list: ', names_list)
+
+
+
+
+
+
 
 
