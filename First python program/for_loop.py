@@ -2,10 +2,10 @@
 # for subject in subjects:
 #     print(subject)
 
-# colors=['Black','White']
-# # for color in colors:
-# upper=[color.upper() for color in colors]
-# print(upper)
+colors=['Black','White']
+# for color in colors:
+upper=[color.upper() for color in colors]
+print(upper)
 
 # for n in range(1,50,5):
 #  print(n)

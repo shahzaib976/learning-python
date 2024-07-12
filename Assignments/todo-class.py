@@ -18,7 +18,7 @@ class TodoList:
         
         self.todos.append(todo)
         print('Task added:',todo['name'])
-     
+    
     def mark_completed(self,id):
         todo = self.find_todo(id)
         todo['completed']=True
@@ -46,23 +46,30 @@ class TodoList:
         todo["name"]=name
         todo["updated_at"]=formatted_date_time
 
+
+
     def find_todo(self,id):
         for todo in self.todos:
             if todo["id"]==id:
                 return todo
         raise Exception(f"Todo not found with ID {id}")
     
+    def filter_data_by_completed(self,status):
+        completed_todos= [todo for todo in self.todos if todo['completed']==status]
+        print('completed_todos: ', completed_todos)
 
 
 
 noorTodos = TodoList()
 noorTodos.add_todo("go to laptop")
 noorTodos.add_todo("go to home")
-noorTodos.mark_completed(20)
+noorTodos.add_todo('Turn off AC')
+noorTodos.mark_completed(2)
 noorTodos.remove_todo(1)
 noorTodos.update_todo(2,"shabeer")
-noorTodos.view_tasks()
-
+# noorTodos.view_tasks()
+noorTodos.filter_data_by_completed(True)
+print(noorTodos.todos)
 
 
 

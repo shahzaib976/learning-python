@@ -14,8 +14,8 @@ class BankAccount:
     def view_balance(self):
         print("---------------------------")
         if self.balance==0:
-         print("No balance in your bank account")
-         print()
+            print("No balance in your bank account")
+            print()
         else:
             print("TOTAL BALANCE   ==> ",self.balance)
             print()
@@ -23,7 +23,6 @@ class BankAccount:
 
 
 bank_Account = BankAccount("Noor",500000)
-print()
 print('BALANCE         ==> ', bank_Account.balance)
 bank_Account.deposit(5000)
 bank_Account.deposit(10000)
@@ -37,10 +36,21 @@ bank_Account.withdraw(54300)
 bank_Account.view_balance()
 
 
+bank_Account2 = BankAccount('Shahzaib',450000)
+print('BALANCE         ==> ', bank_Account2.balance)
+bank_Account2.deposit(3000)
+bank_Account2.deposit(6000)
+bank_Account2.deposit(6700)
+bank_Account2.deposit(65000)
+bank_Account2.deposit(3500)
+bank_Account2.deposit(56000)
+bank_Account2.withdraw(8000)
+bank_Account2.withdraw(5000)
+bank_Account2.view_balance()
 
 
 
 
 
 
-
+        
