@@ -38,6 +38,7 @@ countries.update(anotherCountries)
 print('countries: ', countries)
 
 
+
 #___Remove item from the set___#
 
 cities = {'Peshawar','Karachi','Lahore','Multan'}

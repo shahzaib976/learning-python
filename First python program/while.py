@@ -1,9 +1,9 @@
 # #_________________________________________________________________#
 
-# i=0
-# while i<=100:
-#     print(i)
-#     i+=1
+i=100
+while i>=0:
+    print(i)
+    i-=1
 
 
 # #_________________________________________________________________#
@@ -17,14 +17,14 @@
 
 #_________________________________________________________________#
 
-str = "Shahzaib"
-i = len(str) - 1
-reverseStr = ''
-while i>=0:
- reverseStr = reverseStr+str[i]
- print(str[i])
- i -= 1
-print(reverseStr)
+# str = "12345678"
+# i = len(str) - 1
+# reverseStr = ''
+# while i>=0:
+#  reverseStr = reverseStr+str[i]
+# #  print(str[i])
+#  i -= 1
+# print(reverseStr)
 
 # #_________________________________________________________________#
 
@@ -101,12 +101,12 @@ print(reverseStr)
 
 
 
-numbers = [12,34,45,32,65,43]
-i = 0
-i = len(numbers)
-while i>=len(numbers):
- print(numbers[i])
- i+=1
+# numbers = [12,34,45,32,65,43]
+# i = 0
+# i = len(numbers)
+# while i>=len(numbers):
+#  print(numbers[i])
+#  i+=1
 
 
 
